@@ -8,8 +8,8 @@ import os
 
 TRAIN_BODIES_PATH = "../fnc-1/train_bodies.csv"
 TEST_BODIES_PATH = "../fnc-1/competition_test_bodies.csv"
-TRAIN_HEADLINE_PATH = "../fnc-1/train_stances.csv"
-TEST_HEADLINE_PATH = "../fnc-1/competition_test_stances.csv"
+TRAIN_STANCES_PATH = "../fnc-1/train_stances.csv"
+TEST_STANCES_PATH = "../fnc-1/competition_test_stances.csv"
 TRAIN_HEADLINE_MAP_PATH = "./train_headline_map.csv"
 TEST_HEADLINE_MAP_PATH = "./test_headline_map.csv"
 TRAIN_OUTPUT_DIR = "./train_examples/"
@@ -79,8 +79,8 @@ def read_headlines(data_path,headline_map_path, output_dir):
       f.write(headline)
 
 def main():
-  read_headlines(TRAIN_HEADLINE_PATH, TRAIN_HEADLINE_MAP_PATH, TRAIN_OUTPUT_DIR)
-  read_headlines(TEST_HEADLINE_PATH, TEST_HEADLINE_MAP_PATH, TEST_OUTPUT_DIR)
+  read_headlines(TRAIN_STANCES_PATH, TRAIN_HEADLINE_MAP_PATH, TRAIN_OUTPUT_DIR)
+  read_headlines(TEST_STANCES_PATH, TEST_HEADLINE_MAP_PATH, TEST_OUTPUT_DIR)
   read_bodies(TRAIN_BODIES_PATH,TRAIN_OUTPUT_DIR)
   read_bodies(TEST_BODIES_PATH,TEST_OUTPUT_DIR)
 
