@@ -2,6 +2,8 @@ import sklearn
 import csv
 import os
 
+# This code is adapted from https://github.com/nayakneha/fakenews
+
 # Define paths here
 
 TRAIN_BODIES_PATH = "../fnc-1/train_bodies.csv"
@@ -75,8 +77,6 @@ def read_headlines(data_path,headline_map_path, output_dir):
     headline_id = headline_map[headline]
     with open(get_file_name(output_dir, headline_id, FileType.HEADLINE), 'w') as f:
       f.write(headline)
-
-
 
 def main():
   read_headlines(TRAIN_HEADLINE_PATH, TRAIN_HEADLINE_MAP_PATH, TRAIN_OUTPUT_DIR)
