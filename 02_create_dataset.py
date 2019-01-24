@@ -12,7 +12,7 @@ TRAIN_STANCES_PATH = "../fnc-1/train_stances.csv"
 TEST_STANCES_PATH = "../fnc-1/competition_test_stances.csv"
 TRAIN_OUTPUT_DIR = "./train_examples/"
 TEST_OUTPUT_DIR = "./test_examples/"
-TRAIN_DATASET_NAME = "DUPLICATE_TRAIN_DATASET"
+TRAIN_DATASET_NAME = "TRAIN_DATASET"
 TEST_DATASET_NAME = "TEST_DATASET"
 
 def write_dataset(dataset_output_file,output_dir,data_path):
